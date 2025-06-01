@@ -1,0 +1,84 @@
+body, #root, .dashboard-root {
+    min-height: 100vh;
+    background: #f9f6f1; /* light beige */
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-root {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.side-nav {
+    width: 60px;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 24px;
+    position: relative;
+    z-index: 10;
+    height: 100vh;
+}
+
+.hamburger-btn {
+    width: 40px;
+    height: 40px;
+    background: #444;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 8px;
+    padding: 0;
+}
+.hamburger-btn span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: #fff;
+    margin: 3px 0;
+    border-radius: 2px;
+    transition: 0.2s;
+}
+
+.rollout-menu {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    background: #222;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 8px 0;
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.menu-link {
+    padding: 10px 16px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    text-align: left;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background 0.15s, color #f9f6f1;
+}
+.menu-link:hover,
+.menu-link:focus {
+    background: #e0e0e0;
+    color: #222;
+}
+
+.main-content {
+    flex: 1;
+}
