@@ -1,0 +1,7 @@
+[
+  { "name": "meat", "ID": 1001 },
+  { "name": "vegetables", "ID": 1002 },
+  { "name": "fruits", "ID": 1003 },
+  { "name": "combined", "ID": 1004 },
+  { "name": "others", "ID": 1005 }
+]
